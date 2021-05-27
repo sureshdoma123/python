@@ -1,26 +1,12 @@
-##n=int(input())
-##l=[]
-##for i in range(1,n+1):
-##    l.append(i)
-###print(*l)
-##for i in range(len(l)):
-##    for j in range(i+1):
-##        if l[j]==
-
-##n=int(input())
-##k=1
-##for i in range(1,n+1):
-##    for j in range(1,i):
-##        print(k,end=" ")
-##        k+=1
-##    if k==5:
-##        break
-##    print()
+#with time complexity
+'''
 n=int(input())
 k=1
 c=0
 for i in range(1,n):
       for j in range(1,i):
+            if j==i-1:
+                  c+=1
             print(k,end=" ")
             k=k+1
             if k>n:
@@ -28,8 +14,17 @@ for i in range(1,n):
       if k>n:
             break
       print()
-print()
-print("Noof completed rows is: ",c)
+print("\n",c)
+'''
+#without Time complexity
+n=int(input())
+k,c=1,0
+while n>=k:
+      print(k,end=" ")
+      n=n-k
+      c+=1
+      k+=1
+print("\n",c)
 '''
 n=10
 
